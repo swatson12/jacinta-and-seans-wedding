@@ -3,36 +3,106 @@
 <title>Jacinta and Sean's Wedding</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 <style>
+@font-face{
+font-family:main;
+src:url(MostraOneRegular.ttf);
+}
 	.swiper-container {
       width: 100%;
-      height: 500px;
+      height: 87vh;
     }
 	
     .swiper-slide {
       text-align: center;
       font-size: 18px;
-      background: #fff;
+	  background-image:url(img/img1.jpg);
+	  background-position:center;
+	 
 }
+body{
+margin:0 !important;
+}
+h1{
+font-style: normal;
+font-weight: 300;
+margin-left:1%;
+padding-top:2%;
+margin-top:0 !important;
+}
+
+#header{
+height:80px;
+font-family: main;
+background-color:#ece0d4;
+width:100%;
+border-bottom:3px solid #997a0f;
+top:0;
+}
+#right{
+float:right;
+clear:left;
+text-align:center;
+clear:top;
+margin-top:-70px;
+margin-right:1%;
+}
+#right-top{
+padding-bottom:5%;
+border-bottom:2px solid #997a0f;}
+#right-bot{
+margin-top:80%;
+}
+
+.circle {
+	width: 400px;
+	height: 400px;
+	background: rgba(255,255,255,0.85);
+	border-radius: 200px;
+	margin: 0 auto;
+	margin-top:5%;
+}
+.inner{
+box-shadow: inset 0px 0px 0px 3px #997a0f;
+}
+
+
+.circle-text{vertical-align:middle;
+margin-top:200px !important;
+z-index:100;
+}
+.swiper-container p{
+		
+	  padding-top:180px;
+}
+
 </style>
 
+<!--gold accent #997a0f
+pink #ece0d4
+
+try get an inner border on circle - sort of offset 
+-->
 </head>
+
 <body>
-<h1>Jacinta and Sean's wedding!</h1><div class="swiper-container">
+<div id="header">
+<h1>Jacinta and Sean's wedding</h1>
+<div id="right"><span id="right-top">31 May 2019</span><br><br><span id="right-bot">Nautilus Resort, Rarotonga</span></div>
+
+</div>
+<div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">
+		<div class="circle inner outer">
+			<p>text to center</p>
+		</div>
+	  
+	  
+	  </div>
       <div class="swiper-slide">Slide 2</div>
       <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
     </div>
-    <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
-    <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
@@ -40,14 +110,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
  <script>
     var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
       centeredSlides: true,
 	  simulateTouch:false,
 	  loop:true,
-      autoplay: {
+	  //DON'T FORGET TO UNCOMMENT
+      /*autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-      },
+      },*/
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
