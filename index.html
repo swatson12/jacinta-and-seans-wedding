@@ -71,7 +71,7 @@
       border-collapse: separate;
       border-spacing: 10px;
       padding: 15px;
-      background: rgba(255, 255, 255, 0.65);
+      background: rgba(236, 224, 212, 0.65);
       border-radius: 50%;
       margin: 0 auto;
       margin-top: 5%;
@@ -82,6 +82,15 @@
       height: 400px;
       border-radius: 50%;
       border: 2px #997a0f solid;
+    }
+    .circle-header{
+      font-family: main;
+      padding-bottom: 1%;
+      border-bottom: 2px solid #997a0f;
+    }
+    .name{
+      font-size: 110%;
+      font-weight: bold;
     }
 
 
@@ -110,13 +119,26 @@ try get an inner border on circle - sort of offset
       <div class="swiper-slide">
         <table>
           <td>
-            text to center
+           <h2 class="circle-header">RSVP</h2>
+           <span class="name">Jacinta:</span> <a href="tel:0210583334">021 058 3334</a>
           </td>
         </table>
       </div>
 
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">
+          <table>
+              <td>
+                text to center
+              </td>
+            </table>
+      </div>
+      <div class="swiper-slide">
+          <table>
+              <td>
+                text to center
+              </td>
+            </table>
+      </div>
     </div>
     <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
