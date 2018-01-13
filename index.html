@@ -9,6 +9,11 @@
       src: url(MostraOneRegular.ttf);
     }
 
+    @font-face {
+      font-family: body;
+      src: url(malgun.ttf);
+    }
+
     .swiper-container {
       width: 100%;
       height: 87vh;
@@ -83,16 +88,32 @@
       border-radius: 50%;
       border: 2px #997a0f solid;
     }
-    .circle-header{
+    .header{
       font-family: main;
-      padding-bottom: 1%;
+      margin-bottom: 0;
+
+    }
+    .circle-header{
+      padding-bottom: 2%;   
+      margin-bottom: 2%;      
       border-bottom: 2px solid #997a0f;
+      margin-left:10px;
+      margin-right:10px; 
     }
     .name{
       font-size: 110%;
       font-weight: bold;
+      font-family: main;
     }
-
+    .reg{
+      font-family: body;
+    }
+    .small{
+      font-size: 70%;
+    }
+    .title{
+      font-family: main;
+    }
 
   </style>
 
@@ -119,8 +140,10 @@ try get an inner border on circle - sort of offset
       <div class="swiper-slide">
         <table>
           <td>
-           <h2 class="circle-header">RSVP</h2>
-           <span class="name">Jacinta:</span> <a href="tel:0210583334">021 058 3334</a>
+            <div class="circle-header"><h1 class="header">RSVP</h1><span class="reg small">by <i><b>31 Jan 2019 </b></i></span></br></div>
+           <span class="name">Jacinta:</span> <a href="tel:0210583334" class="reg">021 058 3334</a></br>
+           <span class="name">Sean:</span> <a href="tel:0211322517" class="reg">021 132 2517</a>
+          </br><h4 class="title"><i>Your presence is the only present desired, no gifts required</i></h4>
           </td>
         </table>
       </div>
@@ -140,7 +163,6 @@ try get an inner border on circle - sort of offset
             </table>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
