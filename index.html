@@ -94,11 +94,12 @@
 
     }
     .circle-header{
+      margin-top:25%;
       padding-bottom: 2%;   
       margin-bottom: 2%;      
       border-bottom: 2px solid #997a0f;
-      margin-left:10px;
-      margin-right:10px; 
+      margin-left:5%;
+      margin-right:5%; 
     }
     .name{
       font-size: 110%;
@@ -113,6 +114,9 @@
     }
     .title{
       font-family: main;
+      width:70%;
+      margin:0 auto;
+      margin-top:10%;
     }
 
   </style>
@@ -143,7 +147,7 @@ try get an inner border on circle - sort of offset
             <div class="circle-header"><h1 class="header">RSVP</h1><span class="reg small">by <i><b>31 Jan 2019 </b></i></span></br></div>
            <span class="name">Jacinta:</span> <a href="tel:0210583334" class="reg">021 058 3334</a></br>
            <span class="name">Sean:</span> <a href="tel:0211322517" class="reg">021 132 2517</a>
-          </br><h4 class="title"><i>Your presence is the only present desired, no gifts required</i></h4>
+          </br><span class="subtitle"><h4 class="title"><i>Your presence is the only present desired, no gifts required</i></h4></span>
           </td>
         </table>
       </div>
@@ -174,10 +178,10 @@ try get an inner border on circle - sort of offset
       simulateTouch: false,
       loop: true,
       //DON'T FORGET TO UNCOMMENT
-      autoplay: {
-        delay: 2500,
+      /*autoplay: {
+        delay: 5000,
         disableOnInteraction: false,
-      },
+      },*/
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
