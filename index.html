@@ -88,37 +88,62 @@
       border-radius: 50%;
       border: 2px #997a0f solid;
     }
-    .header{
+
+    .header {
       font-family: main;
       margin-bottom: 0;
 
     }
-    .circle-header{
-      margin-top:25%;
-      padding-bottom: 2%;   
-      margin-bottom: 2%;      
+
+    .circle-header {
+      margin-top: 25%;
+      padding-bottom: 2%;
+      margin-bottom: 2%;
       border-bottom: 2px solid #997a0f;
-      margin-left:5%;
-      margin-right:5%; 
+      margin-left: 5%;
+      margin-right: 5%;
     }
-    .name{
+
+    .name {
       font-size: 110%;
       font-weight: bold;
       font-family: main;
     }
-    .reg{
+
+    .reg {
       font-family: body;
     }
-    .small{
+
+    .small {
       font-size: 70%;
     }
-    .title{
+
+    .title {
       font-family: main;
-      width:70%;
-      margin:0 auto;
-      margin-top:10%;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 10%;
     }
 
+    a  {
+      text-decoration: none;
+      color: #997a0f;
+    }
+    a:hover{
+      font-weight: bold;
+    }
+
+    #text {
+      font-family: body;
+      margin-bottom: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
+      overflow-wrap: break-word;
+    }
+
+    .list {
+      font-weight: bolder;
+    }
   </style>
 
   <!--gold accent #997a0f
@@ -144,27 +169,65 @@ try get an inner border on circle - sort of offset
       <div class="swiper-slide">
         <table>
           <td>
-            <div class="circle-header"><h1 class="header">RSVP</h1><span class="reg small">by <i><b>31 Jan 2019 </b></i></span></br></div>
-           <span class="name">Jacinta:</span> <a href="tel:0210583334" class="reg">021 058 3334</a></br>
-           <span class="name">Sean:</span> <a href="tel:0211322517" class="reg">021 132 2517</a>
-          </br><span class="subtitle"><h4 class="title"><i>Your presence is the only present desired, no gifts required</i></h4></span>
+            <div class="circle-header">
+              <h1 class="header">RSVP</h1>
+              <span class="reg small">by
+                <i>
+                  <b>31 Jan 2019 </b>
+                </i>
+              </span>
+              </br>
+            </div>
+            <span class="name">Jacinta:</span>
+            <a href="tel:0210583334" class="reg link">021 058 3334</a>
+            </br>
+            <span class="name">Sean:</span>
+            <a href="tel:0211322517" class="reg link">021 132 2517</a>
+            </br>
+            <span class="subtitle">
+              <h4 class="title">
+                <i>Your presence is the only present desired, no gifts required</i>
+              </h4>
+            </span>
           </td>
         </table>
       </div>
 
       <div class="swiper-slide">
-          <table>
-              <td>
-                text to center
-              </td>
-            </table>
+        <table>
+          <td>
+            <div class="circle-header">
+              <h1 class="header">Flights</h1>
+            </div>
+            <div id="text">
+              <span class="list">-</span> Flights become available around May 2018
+              </br>
+              <span class="list">-</span> They also are often on sale
+              </br>
+              <span class="list">-</span> Jetstar and Air New Zealand both have flights
+              </br>
+            </div>
+            </ul>
+          </td>
+        </table>
       </div>
       <div class="swiper-slide">
-          <table>
-              <td>
-                text to center
-              </td>
-            </table>
+        <table>
+          <td>
+            <div class="circle-header">
+              <h1 class="header">Accommodation</h1>
+            </div>
+            <div id="text">
+              We're not staying at the resort, as it's super expensive.
+              </br>
+              The best places to book are:</br>
+              <span class="list">- </span><a href="airbnb.com" target="_blank">Air BnB</a></br>
+              <span class="list">- </span><a href="expedia.com" target="_blank">Expedia</a></br>
+              <span class="list">- </span><a href="booking.com" target="_blank">Booking.com</a></br>
+
+            </div>
+          </td>
+        </table>
       </div>
     </div>
     <div class="swiper-button-next"></div>
@@ -175,7 +238,7 @@ try get an inner border on circle - sort of offset
   <script>
     var swiper = new Swiper('.swiper-container', {
       centeredSlides: true,
-      simulateTouch: false,
+      simulateTouch: true,
       loop: true,
       //DON'T FORGET TO UNCOMMENT
       /*autoplay: {
