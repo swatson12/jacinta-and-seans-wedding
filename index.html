@@ -2,6 +2,7 @@
 
 <head>
   <title>Jacinta and Sean's Wedding</title>
+  <link rel="shortcut icon" href="img/img1.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
   <style>
     @font-face {
@@ -144,6 +145,9 @@
     .list {
       font-weight: bolder;
     }
+    #h{
+      color:black;
+    }
   </style>
 
   <!--gold accent #997a0f
@@ -155,7 +159,7 @@ try get an inner border on circle - sort of offset
 
 <body>
   <div id="header">
-    <h1>Jacinta and Sean's wedding</h1>
+   <a href="index.html" id="h"> <h1>Jacinta and Sean's wedding</h1></a>
     <div id="right">
       <span id="right-top">31 May 2019</span>
       <br>
@@ -166,7 +170,7 @@ try get an inner border on circle - sort of offset
   </div>
   <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">
+      <div class="swiper-slide" data-hash="rsvp">
         <table>
           <td>
             <div class="circle-header">
@@ -193,7 +197,7 @@ try get an inner border on circle - sort of offset
         </table>
       </div>
 
-      <div class="swiper-slide">
+      <div class="swiper-slide" data-hash="flights">
         <table>
           <td>
             <div class="circle-header">
@@ -211,7 +215,7 @@ try get an inner border on circle - sort of offset
           </td>
         </table>
       </div>
-      <div class="swiper-slide">
+      <div class="swiper-slide" data-hash="accommodation">
         <table>
           <td>
             <div class="circle-header">
@@ -253,6 +257,7 @@ try get an inner border on circle - sort of offset
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      hashNavigation:true
     });
   </script>
 </body>
