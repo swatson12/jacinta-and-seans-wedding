@@ -108,6 +108,20 @@
       font-family: body;
     }
 
+    .addeventatc{
+        background:none !important;
+        border:1px solid #997a0f !important;
+        padding:12px !important;
+    }
+    .addeventatc:active, .addeventatc:hover{
+        background-color:rgba(153, 122, 15,0.4) !important;
+    }
+    .addeventatc_icon{
+        display: none !important;
+        width:0 !important;
+        position:unset !important;
+    }
+
     .small {
       font-size: 90%;
     }

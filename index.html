@@ -4,7 +4,9 @@
   <title>Jacinta and Sean's Wedding</title>
   <link rel="shortcut icon" href="img/img1.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
   <link rel="stylesheet" href="index.css">
+
 
   <!--gold accent #997a0f
 pink #ece0d4
@@ -32,7 +34,12 @@ try get an inner border on circle - sort of offset
             <div class="circle-header">
               <h1 class="header">RSVP</h1>
               <span class="reg small">by
-                  <b>31 Jan 2019 </b>
+                  <b class="addeventatc" title="31 Jan 2019">31 Jan 2019<span class="start">01/31/2019 00:01</span>
+                    <span class="end">01/31/2019 23:59</span>
+                    <span class="timezone">New Zealand</span>
+                    <span class="title">RSVP</span>
+                    <span class="description">Last day to RSVP for Jacinta and Sean's wedding!</span>
+                     </b>
               </span>
               </br>
             </div>
@@ -94,10 +101,10 @@ try get an inner border on circle - sort of offset
       loop: true,
       speed:1000,
       //DON'T FORGET TO UNCOMMENT
-      autoplay: {
+      /*autoplay: {
         delay: 6000,
         disableOnInteraction: false,
-      },
+      },*/
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
