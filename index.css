@@ -194,5 +194,11 @@
       height:800px;
       border-radius: 50%;
       font-size: 200%;
+      text-overflow: clip;
     }
-}
+
+
+
+
+    
+  }
