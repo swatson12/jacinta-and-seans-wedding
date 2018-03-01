@@ -158,7 +158,26 @@
 
       #gold-bg{
         background-image:none;
-        fill:#997a0f
+        fill:#997a0f;
+        top:35%;
+      }
+
+      footer{
+        border-top: 2px solid #997a0f;
+        height:37px;
+        background-color: #ece0d4;
+        font-family: body;
+
+      }
+      .foot{
+        padding-top: 7px;
+        padding-right: 7px;
+        float:right;
+        font-size: 100%;
+      }
+      #date{
+        float:left;
+        padding-left: 7px;
       }
 
 /*-------------------------------------------------------*/      
@@ -202,6 +221,24 @@
     #gold-bg{
       height:5%;
       width:5%;
+      top:50%;
+    }
+    
+    footer{
+      border-top: 2px solid #997a0f;
+      height:80px;
+      background-color: #ece0d4;
+      font-family: body;
       
+    }
+    .foot{
+      padding-top: 20px;
+      padding-right: 20px;
+      float:right;
+      font-size: 150%;
+    }
+    #date{
+      float:left;
+      padding-left: 20px;
     }
   }
